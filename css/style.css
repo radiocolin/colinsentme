@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('../fonts/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arvo';
+    src: url('../fonts/Arvo-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Arvo';
+    src: url('../fonts/Arvo-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+    font-family: 'Arvo', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4em;
+    margin-bottom: 0;
+    color: #333; /* Dark color for header */
+    position: relative; /* Needed for absolute positioning of dots */
+    display: inline-block; /* To make width apply and allow relative positioning */
+}
+
+.header h1 .dot {
+    position: relative;
+    display: inline-block; /* To allow pseudo-elements to position relative to it */
+}
+
+.header h1 .dot::before {
+    content: '';
+    position: absolute;
+    top: -0.05em; /* Adjust vertical position slightly lower */
+    left: 45%;
+    transform: translateX(0);
+    width: 0.2em; /* Size of the dot */
+    height: 0.2em; /* Size of the dot */
+    background-color: var(--random-accent-color, #F56CB1); /* Use variable, with pink as fallback */
+    border-radius: 50%;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+.header p {
+
+    font-family: 'Arvo', sans-serif;
+
+    font-size: 1.2em;
+
+    margin-top: 0;
+
+    color: #666;
+
+    display: flex;
+
+    align-items: center;
+
+    white-space: nowrap;
+
+    align-self: stretch;
+
+}
+
+
+
+.header p {
+
+
+
+    font-family: 'Arvo', sans-serif;
+
+
+
+    font-size: 1.2em;
+
+
+
+    margin-top: 0;
+
+
+
+    color: #666;
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    white-space: nowrap;
+
+
+
+}
+
+
+
+
+
+
+
+.header p::before,
+
+
+
+
+
+
+
+.header p::after {
+
+
+
+
+
+
+
+    content: '';
+
+
+
+
+
+
+
+    display: block;
+
+
+
+
+
+
+
+    flex: 1;
+
+
+
+
+
+
+
+    height: 8px;
+
+
+
+
+
+
+
+    margin: 0 10px;
+
+
+
+
+
+
+
+    background-repeat: no-repeat;
+
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.5));
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header p::before {
+
+
+
+
+
+
+
+    background-image: linear-gradient(to right, var(--random-accent-color, #F56CB1) 90%, transparent 90%), radial-gradient(circle, var(--random-accent-color, #F56CB1) 50%, transparent 50%);
+
+
+
+
+
+
+
+    background-size: calc(100% - 4px) 2px, 8px 8px;
+
+
+
+
+
+
+
+    background-position: right center, left center;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header p::after {
+
+
+
+
+
+
+
+    background-image: linear-gradient(to left, var(--random-accent-color, #F56CB1) 90%, transparent 90%), radial-gradient(circle, var(--random-accent-color, #F56CB1) 50%, transparent 50%);
+
+
+
+
+
+
+
+    background-size: calc(100% - 4px) 2px, 8px 8px;
+
+
+
+
+
+
+
+    background-position: left center, right center;
+
+
+
+
+
+
+
+}
+
+
+.apps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.app {
+    background-color: #fff; /* White background for apps */
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app:nth-child(1) {
+    border-top: 10px solid #F56CB1;
+}
+
+.app:nth-child(2) {
+    border-top: 10px solid #F75300;
+}
+
+
+.app .icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+}
+
+.app h2 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333; /* Dark color for app titles */
+}
+
+.app .description {
+    font-size: 1.1em;
+    color: #666; /* Slightly lighter dark color */
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links .website {
+    background-color: #333; /* Dark background for website link */
+    color: #fff; /* White text for website link */
+}
+
+.links .app-store img {
+    width: 120px;
+    vertical-align: middle;
+}
+
+.footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer a {
+    color: #666;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colin Weir's Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>COL<span class="dot">i</span>N We<span class="dot">i</span>R</h1>
+            <p>presents</p>
+        </div>
+        <div class="apps">
+            <div class="app">
+                <img class="icon" src="img/away-message-icon.png" alt="Away Message Icon">
+                <h2>AWAY MESSAGE</h2>
+                <p class="description">virtual sticky-notes for<br>your real life friends</p>
+                <div class="links">
+                    <a href="https://www.awaymessage.fun/" class="website">Website</a>
+                    <a href="https://apple.co/3NzZ4E7" class="app-store">
+                        <img src="img/app-store-badge.svg" alt="Download on the App Store">
+                    </a>
+                </div>
+            </div>
+            <div class="app">
+                <img class="icon" src="img/wheelie-icon.png" alt="Wheelie Icon">
+                <h2>WHeeLIe</h2>
+                <p class="description">track every ride</p>
+                <div class="links">
+                    <a href="https://wheelieapp.com/" class="website">Website</a>
+                    <a href="https://apple.co/4qx0GMA" class="app-store">
+                        <img src="img/app-store-badge.svg" alt="Download on the App Store">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="https://cute-crocus-08c.notion.site/Colin-Sent-Me-0bbf2ffa2b32493c9c725be32d5aea3f">blog</a>
+            <a href="https://bsky.app/profile/colin.hoagie.fun">bluesky</a>
+            <a href="mailto:colinsweir@gmail.com">contact</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colors = ['#F56CB1', '#F75300'];
+            const sharedRandomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.setProperty('--random-accent-color', sharedRandomColor);
+        });
+    </script>
+</body>
+</html>
