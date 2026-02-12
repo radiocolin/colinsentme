@@ -59,9 +59,9 @@ body {
     transform: translateX(0);
     width: 0.2em; /* Size of the dot */
     height: 0.2em; /* Size of the dot */
-    background-color: var(--random-accent-color, #F56CB1); /* Use variable, with pink as fallback */
+    background-color: #2AE4CA; /* Use variable, with pink as fallback */
     border-radius: 50%;
-    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5));
 }
 
 .header p {
@@ -81,6 +81,8 @@ body {
     white-space: nowrap;
 
     align-self: stretch;
+    margin-left: -15px;
+    margin-right: -15px;
 
 }
 
@@ -166,6 +168,7 @@ body {
 
 
 
+
     height: 8px;
 
 
@@ -184,7 +187,7 @@ body {
 
     background-repeat: no-repeat;
 
-    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
 
 
 
@@ -216,7 +219,7 @@ body {
 
 
 
-    background-image: linear-gradient(to right, var(--random-accent-color, #F56CB1) 90%, transparent 90%), radial-gradient(circle, var(--random-accent-color, #F56CB1) 50%, transparent 50%);
+    background-image: linear-gradient(to right, #2AE4CA 90%, transparent 90%), radial-gradient(circle, #2AE4CA 50%, transparent 50%);
 
 
 
@@ -264,7 +267,7 @@ body {
 
 
 
-    background-image: linear-gradient(to left, var(--random-accent-color, #F56CB1) 90%, transparent 90%), radial-gradient(circle, var(--random-accent-color, #F56CB1) 50%, transparent 50%);
+    background-image: linear-gradient(to left, #2AE4CA 90%, transparent 90%), radial-gradient(circle, #2AE4CA 50%, transparent 50%);
 
 
 
