@@ -361,6 +361,67 @@ body {
     vertical-align: middle;
 }
 
+.utilities {
+    margin-top: 50px;
+}
+
+.utilities-label {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.utility {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 16px 24px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.utility-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.utility-info h3 {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.3em;
+    margin: 0 0 4px 0;
+    color: #333;
+}
+
+.utility-info p {
+    font-size: 0.8em;
+    color: #888;
+    margin: 0 0 10px 0;
+}
+
+.utility-links {
+    display: flex;
+    gap: 8px;
+}
+
+.utility-links a {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #555;
+    text-decoration: none;
+    background-color: #eee;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.utility-links a:hover {
+    background-color: #ddd;
+}
+
 .footer {
     margin-top: 40px;
     display: flex;
