@@ -4,7 +4,7 @@ title: "What’s in a name?"
 date: 2026-03-20 00:00:00 
 ---
 
-<aside>
+<aside markdown="1">
 📬
 
 *This email was sent to the Phillies and Ghost PR in the wake of [their decision to rename Harry The K’s](https://share.inquirer.com/g26JzV) to the Ghost Energy Deck.*

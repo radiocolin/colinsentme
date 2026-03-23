@@ -18,11 +18,11 @@ The benefits of trees in the urban landscape can't be understated. They add nece
 
 And you can watch birds get drunk.
 
-![Little lushes.](Trees%20Are%20Terrific/IMG_0767_(1).jpeg)
+![Little lushes.]({{ "/assets/img/blog/trees-are-terrific/IMG_0767_(1).jpeg" | relative_url }})
 
 Little lushes.
 
-<aside>
+<aside markdown="1">
 🗺️
 
 [Check out a map](https://www.opentreemap.org/phillytreemap/map/) of street trees throughout Philadelphia.
