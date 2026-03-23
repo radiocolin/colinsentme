@@ -6,6 +6,8 @@ url: "https://colinsent.me"
 image: /img/og-image.png
 
 markdown: kramdown
+kramdown:
+  parse_block_html: true
 # theme: minima # We are using custom layouts in _layouts/
 plugins:
   - jekyll-feed
