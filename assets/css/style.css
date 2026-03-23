@@ -457,33 +457,33 @@ body {
 }
 
 .post-content aside {
-    background: #f1f1f1; /* Light gray from Notion */
-    padding: 16px 20px;
-    border-radius: 10px;
+    background: #f1f1f1;
+    padding: 24px;
+    border-radius: 12px;
     border: none;
     margin: 30px 0;
-    font-size: 0.95em;
-    color: #37352f; /* Darker Notion text color */
-}
-
-.callout-content {
-    display: flex;
+    display: grid !important;
+    grid-template-columns: 50px 1fr; /* Fixed width for emoji column */
     align-items: flex-start;
-    gap: 12px;
+    gap: 16px;
+    text-align: left;
 }
 
 .callout-emoji {
-    font-size: 1.4em;
-    line-height: 1.2;
+    font-size: 2.2em; /* Significantly larger */
+    line-height: 1;
+    display: block;
+    margin-top: -4px; /* Adjust for font baseline */
 }
 
 .callout-text {
-    flex: 1;
+    font-size: 1.1em;
     line-height: 1.5;
+    color: #37352f;
 }
 
 .callout-text p {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .post-content aside p:last-child {

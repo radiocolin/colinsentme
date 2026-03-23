@@ -24,10 +24,8 @@ And you can watch birds get drunk.
 Little lushes.
 
 <aside markdown="1">
-<div class="callout-content">
 <span class="callout-emoji">🗺️</span>
 <div class="callout-text" markdown="1">
 [Check out a map](https://www.opentreemap.org/phillytreemap/map/) of street trees throughout Philadelphia.
-</div>
 </div>
 </aside>
