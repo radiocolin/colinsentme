@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2026-03-23T16:43:25-05:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Colin Weir’s Apps</title><subtitle>Colin Weir makes apps. Away Message is digital sticky notes for your real friends. Wheelie is bike ride tracking.</subtitle><author><name>Colin Weir</name></author><entry><title type="html">What’s in a name?</title><link href="http://0.0.0.0:4000/blog/what-s-in-a-name/" rel="alternate" type="text/html" title="What’s in a name?" /><published>2026-03-19T19:00:00-05:00</published><updated>2026-03-19T19:00:00-05:00</updated><id>http://0.0.0.0:4000/blog/what-s-in-a-name</id><content type="html" xml:base="http://0.0.0.0:4000/blog/what-s-in-a-name/"><![CDATA[<aside>
+📬
+
+*This email was sent to the Phillies and Ghost PR in the wake of [their decision to rename Harry The K’s](https://share.inquirer.com/g26JzV) to the Ghost Energy Deck.*
+
+</aside>
+
+<p>Being in the business of baseball, I would assume that you are familiar with the concept of an unforced error. But that hasn’t stopped the Phillies (and Ghost) from making one this week.</p>
+
+<p>Stadium naming conventions come and go, and most of them are inconsequential. I truly do not care what luxury car brand is on the section behind home plate in this or any other year. But Harry The K’s was supposed to be different. Harry’s was there to honor a beloved member of the Phillies organization who left too soon.</p>
+
+<p>The way you rolled out this announcement is, quite frankly, gross. It is beneath you as an organization. I’m disappointed that the Phillies have sunk to this level. It’s much easier to simply say nothing and hope that an unpopular change happens quietly. It’s difficult to put out a statement about something that you know will be deeply unpopular. But perhaps the fact you felt you had to do this so quietly should have given you pause?</p>
+
+<p>Are we supposed to look at Mr. Fling’s statement and say, “oh, well if this is to ‘drive incremental foot traffic’ to the space, then sure, let’s rip Harry’s name off of it.” Could Mr. Fling possibly have been more tone deaf regarding how fans feel about Harry? Could the Phillies organization at least try to say something <em>human</em> about the situation instead of talking about activations and engagement?</p>
+
+<p>I understand that sponsorships are part of modern sports economics, and I assume the financial terms were significant, particularly in a year with national attention on Philadelphia. But not all revenue opportunities carry equal weight, and this was one that came at the expense of something fans actually valued. I hope that whatever Ghost paid for the naming rights to this deck is worth the cost. Because at least for 2026, Ghost is now officially the brand that removed a beloved man’s name from a piece of the place he called home.</p>
+
+<p>Shame on all of you.</p>]]></content><author><name>Colin Weir</name></author><summary type="html"><![CDATA[📬]]></summary></entry><entry><title type="html">Running Down a Dream</title><link href="http://0.0.0.0:4000/blog/running-down-a-dream/" rel="alternate" type="text/html" title="Running Down a Dream" /><published>2026-01-29T18:00:00-06:00</published><updated>2026-01-29T18:00:00-06:00</updated><id>http://0.0.0.0:4000/blog/running-down-a-dream</id><content type="html" xml:base="http://0.0.0.0:4000/blog/running-down-a-dream/"><![CDATA[<p>I had a huge collection of away messages saved around 2006. I was big on quotes, lyrics, etc that were relevant to the thing I was doing.</p>
+
+<p>The best ones were a little cringe or too specific. Clearly meant for one person who might see it and know exactly what it meant. AIM gave you just enough room to be expressive, but with plausible deniability.</p>
+
+<p>AIM was, in my opinion, peak messaging. Unfortunately, AIM fully whiffed it when it came to the mobile revolution and was quietly put out to pasture in 2017. I think that’s mostly OK, because objectively, it would be a terrible chat client in 2026.</p>
+
+<p>For Apple users, AIM has mostly been succeeded by iMessage, which is itself the successor to iChat, Apple’s own AIM client.</p>
+
+<p>iMessage is an incredible technical achievement. And Apple has given us a nice set of Apple-approved ways to express ourselves while making sure the experience is consistent across multiple platforms and billions of users. You know that every time you type “congratulations”, it’s going to drop the confetti.</p>
+
+<p>But I think that passive element is still missing. The most you can indicate <em>right now</em> is that you have notifications silenced.</p>
+
+<p>Enter Away Message.</p>
+
+<p><img src="/assets/img/blog/running-down-a-dream/CleanShot_2026-01-30_at_11.27.522x.png" alt="CleanShot 2026-01-30 at 11.27.52@2x.png" /></p>
+
+<p>Away Message is an app for iOS and the Mac built around that missing passive layer.</p>
+
+<p>You can have exactly one status at a time. It’s not a post and it’s not a message, and there are no replies or reactions. You only see statuses from people you’ve mutually connected with. There’s no follower graph to browse and no way to see who else someone is connected to.</p>
+
+<p>You can attach a photo, a place, or a song if you want. You can change the background, pick fonts, and adjust colors.</p>
+
+<p>There’s no feed to scroll, no history to dig through, and no way to boost something someone else said. If you change your status, the old one disappears. And all your statuses have a maximum shelf life of 24 hours.</p>
+
+<p><img src="/assets/img/blog/running-down-a-dream/CleanShot_2026-01-30_at_11.48.262x.png" alt="CleanShot 2026-01-30 at 11.48.26@2x.png" /></p>
+
+<p>The app was genuinely fun to build. It’s written entirely in UIKit and uses Firebase on the back end. Right now it’s very cheap to run, and I plan to keep it up as long as it stays that way.</p>
+
+<p>There are no ads, no analytics, no in-app purchases, and no growth plan. It’s not trying to become a platform.</p>
+
+<p>It’s just a small idea I wanted to get out of my head and <a href="https://apple.co/3NzZ4E7">into the App Store</a>.</p>]]></content><author><name>Colin Weir</name></author><summary type="html"><![CDATA[I had a huge collection of away messages saved around 2006. I was big on quotes, lyrics, etc that were relevant to the thing I was doing.]]></summary></entry><entry><title type="html">Blog Posts I Enjoy and Reference Regularly</title><link href="http://0.0.0.0:4000/blog/blog-posts-i-enjoy-and-reference-regularly/" rel="alternate" type="text/html" title="Blog Posts I Enjoy and Reference Regularly" /><published>2023-04-24T19:00:00-05:00</published><updated>2023-04-24T19:00:00-05:00</updated><id>http://0.0.0.0:4000/blog/blog-posts-i-enjoy-and-reference-regularly</id><content type="html" xml:base="http://0.0.0.0:4000/blog/blog-posts-i-enjoy-and-reference-regularly/"><![CDATA[<p><a href="https://zachholman.com/posts/shit-work/">Don’t Give Your Users Shit Work</a></p>
+
+<blockquote>
+  <p>Either something is important, or it isn’t. You don’t need five levels of priorities to decide that, and spending time categorizing isn’t real work.</p>
+
+</blockquote>
+
+<blockquote>
+  <p>Here’s a polite person’s trick, one that has never failed me. I will share it with you because I like and respect you, and it is clear to me that you’ll know how to apply it wisely: When you are at a party and are thrust into conversation with someone, see how long you can hold off before talking about what they do for a living.</p>
+
+</blockquote>
+
+<p><a href="https://medium.com/s/story/how-to-be-polite-9bf1e69e888c">How to Be Polite</a></p>
+
+<p><a href="https://www.raptitude.com/2011/09/how-to-walk-across-a-parking-lot/">How to walk across a parking lot</a></p>
+
+<blockquote>
+  <p>A lot of the time when we’re walking, we’re doing it just so we can be done with walking. There are times when that’s not true though. If you can walk across a parking lot like you’re walking in a bathrobe from the shower to the kitchen on a saturday morning, then you can make vast swaths of your time on this earth much better. This is no joke. If you get it, you get it.</p>
+
+</blockquote>
+
+<blockquote>
+  <p>Don’t worry, there is nothing wrong with making errors. They are actually good things, since they help you to learn. But you learn by fixing them, rather than letting them ride.</p>
+
+</blockquote>
+
+<p><a href="http://www.mrmoneymustache.com/2012/04/18/news-flash-your-debt-is-an-emergency/">News Flash: Your Debt is an Emergency!!</a></p>
+
+<p><a href="https://www.seriouseats.com/whats-really-in-american-cheese">What Is American Cheese, Anyway?</a></p>
+
+<blockquote>
+  <p>I’m not going to try to convince you that American cheese is the greatest culinary gift this country has bestowed upon the world (it’s not). I’m not going to try to convince you that American cheese is just as complex in flavor as a great cheddar or Tomme (it isn’t). I’m not even going to try to convince you that if you don’t like American cheese, you probably just haven’t had a great cheeseburger or grilled cheese (though you probably haven’t). But I am going to try to clear up some misconceptions about what American cheese really is and how to identify it in the wild.</p>
+
+</blockquote>
+
+<blockquote>
+  <p>With a nostalgic image in my head, I asked if she had learned to make these from her mother when she was growing up in Lithuania or Germany (as us kids had always assumed). My mom laughed and said, “No, I got the recipe from a cottage cheese lid.”</p>
+
+</blockquote>
+
+<p><a href="https://www.atlasobscura.com/articles/secret-family-recipes-copied">The Dirty Secret of ‘Secret Family Recipes’</a></p>]]></content><author><name>Colin Weir</name></author><summary type="html"><![CDATA[Don’t Give Your Users Shit Work]]></summary></entry><entry><title type="html">Veg, Vegan, V, VG, V+</title><link href="http://0.0.0.0:4000/blog/veg-vegan-v-vg-v/" rel="alternate" type="text/html" title="Veg, Vegan, V, VG, V+" /><published>2023-04-19T19:00:00-05:00</published><updated>2023-04-19T19:00:00-05:00</updated><id>http://0.0.0.0:4000/blog/veg-vegan-v-vg-v</id><content type="html" xml:base="http://0.0.0.0:4000/blog/veg-vegan-v-vg-v/"><![CDATA[<p>My wife is vegan, and so when I sit down at any restaurant, whether she’s with me or not, the first thing I usually do is scan the menu to see what vegan options are available.</p>
+
+<p>This is where the trouble starts. <strong>Every restaurant has their own system for indicating vegetarian versus vegan, and it’s never consistent between restaurants</strong>. Some use V for vegetarian and VG for vegan. Others reverse it. My personal preference, because I think it’s the least ambiguous, is V for vegetarian and V+ for vegan, and I wish all restaurants would standardize on this.</p>
+
+<p>My heart soars when I see that “vegan” indicator at the bottom of the menu, and then I start scanning. And often my heart immediately sinks when I realize there is exactly one vegan item available: a hummus plate. <strong>Unless you’re Zahav, <a href="https://www.morganspier.com/menu">no one wants your mediocre hummus plate</a></strong>. It’s not a meal, it’s barely an appetizer. If the humus plate is the only vegan option on your menu, please don’t even bother with the indicator. It just gives us false hope that there might be something good.</p>
+
+<p>One of the better developments for vegan dining out in years is the prevalence of Beyond and Impossible burgers. They’re generally a nice improvement over mushy house-made veggie burgers, but most restaurants don’t put in 1/4 of the effort that they put into all their other burgers. <strong>Martin’s Potato Rolls are not vegan. A vegan burger with no cheese and no sauce is not actually a good burger, it’s just faux beef on white bread.</strong> If you’re going to put forth the effort to put an Impossible burger on the menu, then please make it a good one, and also buy some Violife cheddar and Veganaise. Don’t make it an afterthought, and do more than just a vegetarian patty with dairy cheese and egg-based mayo.</p>
+
+<p>There are countless restaurants that do this really well. Places like <a href="https://www.tattooedmomphilly.com">Tattooed Mom</a> and <a href="https://frontstreetcafe.net">Front Street Cafe</a> have a <strong>vegan-by-default policy</strong>, where things like mayo and hollandaise sauce only come in vegan varieties, and truly, no one knows the difference. <a href="https://burgertimenj.com">Burger Time in Audubon</a> offers vegan versions of almost all of their burgers. <a href="http://locopez.com">Loco Pez</a> has multiple vegan options like soy chorizo that you can mix-and-match with all the normal taco and burrito ingredients, and even has vegan sour creams and cremas. <a href="https://www.goldenempressgarden.com">Golden Empress Garden</a> offers tofu and seitan versions of most of their menu items. When we were in the UK last year, <a href="https://www.byron.co.uk">Byron</a> was an absolute favorite.</p>
+
+<p>A thing from the UK that I really wish would catch on in America is the “<a href="https://www.food.gov.uk/business-guidance/allergen-guidance-for-food-businesses">allergen book</a>”. At any restaurant, you can ask for a book that contains a full list of allergens in every single dish. Conveniently, almost anything that isn’t straight up beef or chicken but is from an animal is also considered an allergen (that might be worth exploring on its own sometime, huh?). Milk, eggs, honey, shellfish, all things that might be lurking in otherwise innocuous restaurant items. Speaking of hummus, did you know that in Italy a lot of the hummus has milk or cheese in it?</p>
+
+<p>This is not to say that I demand a comprehensive vegan menu from every restaurant. I don’t think Butcher and Singer needs to have a cauliflower chop cooked in vegan butter. Some places are meat-focused, and that’s fine. (Although, to be honest, you can probably do a lot more interesting things with a plate of vegetables than with steak and chicken, but that’s a different blog post. See also the link above to Burger Time.)</p>
+
+<p><strong>I promise that you can put honest-to-goodness effort into your vegan menu.</strong> You can make a lot of delicious, interesting dishes with vegetables. You can fill out your bar menu with a vegan burger that at least feels like you put some amount of effort to it, and throw in a buffalo cauliflower that doesn’t use dairy butter. And we will come back and spend our money again and again.</p>]]></content><author><name>Colin Weir</name></author><summary type="html"><![CDATA[My wife is vegan, and so when I sit down at any restaurant, whether she’s with me or not, the first thing I usually do is scan the menu to see what vegan options are available.]]></summary></entry><entry><title type="html">The Magical Self-Rotating, Self-Getting OAuth Token</title><link href="http://0.0.0.0:4000/blog/the-magical-self-rotating-self-getting-oauth-token/" rel="alternate" type="text/html" title="The Magical Self-Rotating, Self-Getting OAuth Token" /><published>2022-04-17T19:00:00-05:00</published><updated>2022-04-17T19:00:00-05:00</updated><id>http://0.0.0.0:4000/blog/the-magical-self-rotating-self-getting-oauth-token</id><content type="html" xml:base="http://0.0.0.0:4000/blog/the-magical-self-rotating-self-getting-oauth-token/"><![CDATA[<p>This class is one of my favorite simple patterns to implement when writing Python code against a web API. It’s a class which maintains the lifecycle of an OAuth bearer token for you, so that each time you use the token elsewhere in your code, you get a valid token back.</p>
+
+<p>The class makes the following assumptions:</p>
+
+<ul>
+  <li>We have client credentials for our OAuth app (no interactive login is required to get a fresh token).</li>
+  <li>The token expires after some number of seconds.</li>
+  <li>We can get a fresh token on each run with our client credentials, without having to persist a refresh token in memory, on disk or in a Vault. This code can be adapted to use a refresh token fairly easily.</li>
+</ul>
+
+<p>The class was originally built against the Azure graph API using the <code class="language-plaintext highlighter-rouge">msal</code> library, but you can adapt it to use the SDK of any app. For our example, I’ve used a generic app with the <code class="language-plaintext highlighter-rouge">requests</code> library.</p>
+
+<p>Here’s the entire class:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="k">class</span> <span class="nc">MagicToken</span><span class="p">:</span>
+	<span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+		<span class="sh">"</span><span class="s">client_id</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">123456</span><span class="sh">"</span><span class="p">,</span>
+		<span class="sh">"</span><span class="s">client_secret</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">shh</span><span class="sh">"</span><span class="p">,</span>
+		<span class="sh">"</span><span class="s">scope</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span> <span class="sh">"</span><span class="s">read</span><span class="sh">"</span><span class="p">,</span>  <span class="sh">"</span><span class="s">write</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">etc</span><span class="sh">"</span> <span class="p">],</span>
+		<span class="sh">"</span><span class="s">auth_endpoint</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">https://api.my-great-app.com/v1.0/auth</span><span class="sh">"</span>
+	<span class="p">}</span>
+	
+	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+		<span class="n">self</span><span class="p">.</span><span class="nf">__acquire_token</span><span class="p">()</span>
+	
+	<span class="k">def</span> <span class="nf">__acquire_token</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+		<span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+			<span class="sh">"</span><span class="s">client_id</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">client_id</span><span class="sh">'</span><span class="p">],</span>
+			<span class="sh">"</span><span class="s">client_secret</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">client_secret</span><span class="sh">'</span><span class="p">],</span>
+	    <span class="sh">"</span><span class="s">scope</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">scope</span><span class="sh">'</span><span class="p">]</span>
+		<span class="p">}</span>
+	  <span class="n">url</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">auth_endpoint</span><span class="sh">'</span><span class="p">]</span>
+	  <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+		<span class="n">self</span><span class="p">.</span><span class="n">__access_token</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="sh">'</span><span class="s">access_token</span><span class="sh">'</span><span class="p">]</span>
+		<span class="n">self</span><span class="p">.</span><span class="n">__token_expires</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">timezone</span><span class="p">.</span><span class="n">utc</span><span class="p">)</span> <span class="o">+</span> <span class="n">datetime</span><span class="p">.</span><span class="nf">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">result</span><span class="p">[</span><span class="sh">'</span><span class="s">expiration</span><span class="sh">'</span><span class="p">])</span>
+		<span class="k">return</span>
+	
+	<span class="nd">@property</span>
+	<span class="k">def</span> <span class="nf">token</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+		<span class="k">if</span> <span class="n">self</span><span class="p">.</span><span class="n">__token_expires</span> <span class="o">&gt;</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">timezone</span><span class="p">.</span><span class="n">utc</span><span class="p">):</span>
+			<span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">__access_token</span>
+		<span class="k">else</span><span class="p">:</span>
+			<span class="n">self</span><span class="p">.</span><span class="nf">__acquire_token</span><span class="p">()</span>
+			<span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">__access_token</span>
+</code></pre></div></div>
+
+<p>Let’s break it down piece by piece.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="sh">"</span><span class="s">client_id</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">123456</span><span class="sh">"</span><span class="p">,</span>
+	<span class="sh">"</span><span class="s">client_secret</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">shh</span><span class="sh">"</span><span class="p">,</span>
+	<span class="sh">"</span><span class="s">scope</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span> <span class="sh">"</span><span class="s">read</span><span class="sh">"</span><span class="p">,</span>  <span class="sh">"</span><span class="s">write</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">etc</span><span class="sh">"</span> <span class="p">],</span>
+	<span class="sh">"</span><span class="s">auth_endpoint</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">https://api.my-great-app.com/v1.0/auth</span><span class="sh">"</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is the basic configuration required to get our token. Client ID, client secret, and the authorization endpoint.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+	<span class="n">self</span><span class="p">.</span><span class="nf">__acquire_token</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">__acquire_token</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+	<span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+		<span class="sh">"</span><span class="s">client_id</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">client_id</span><span class="sh">'</span><span class="p">],</span>
+		<span class="sh">"</span><span class="s">client_secret</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">client_secret</span><span class="sh">'</span><span class="p">],</span>
+    <span class="sh">"</span><span class="s">scope</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">scope</span><span class="sh">'</span><span class="p">]</span>
+	<span class="p">}</span>
+  <span class="n">url</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">auth_endpoint</span><span class="sh">'</span><span class="p">]</span>
+  <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+	<span class="n">self</span><span class="p">.</span><span class="n">__access_token</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="sh">'</span><span class="s">access_token</span><span class="sh">'</span><span class="p">]</span>
+	<span class="n">self</span><span class="p">.</span><span class="n">__token_expires</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">timezone</span><span class="p">.</span><span class="n">utc</span><span class="p">)</span> <span class="o">+</span> <span class="n">datetime</span><span class="p">.</span><span class="nf">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">result</span><span class="p">[</span><span class="sh">'</span><span class="s">expiration</span><span class="sh">'</span><span class="p">])</span>
+	<span class="k">return</span>
+</code></pre></div></div>
+
+<p>When we first start our app, we need to acquire a token. The <code class="language-plaintext highlighter-rouge">__acquire_token()</code> method starts with <code class="language-plaintext highlighter-rouge">__</code> in order to indicate that it shouldn’t be called from elsewhere in our code, it’s effectively a “private” that should only be called from within our class.</p>
+
+<p>When we receive our OAuth response from the server, we want to capture the token itself, as well as the expiration time. Most servers give you back a number of seconds until expiration. If there’s a refresh token as well, you might need to use that to get your next token. We convert this number of seconds into a <code class="language-plaintext highlighter-rouge">datetime</code> object, in the future from the current time.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">token</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">self</span><span class="p">.</span><span class="n">__token_expires</span> <span class="o">&gt;</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">timezone</span><span class="p">.</span><span class="n">utc</span><span class="p">):</span>
+		<span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">__access_token</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="n">self</span><span class="p">.</span><span class="nf">__acquire_token</span><span class="p">()</span>
+		<span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">__access_token</span>
+</code></pre></div></div>
+
+<p>This is where the magic comes in. We can use Python’s <a href="https://www.programiz.com/python-programming/property">@property decorator</a> to handle the lifecycle of the token. Whenever your other code needs to use this token, you can do it like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">access_token</span> <span class="o">=</span> <span class="nc">MagicToken</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">get_user</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+  <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+		<span class="sh">"</span><span class="s">Authorization</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Bearer </span><span class="sh">"</span> <span class="o">+</span> <span class="n">access_token</span><span class="p">.</span><span class="n">token</span><span class="p">,</span>
+		<span class="sh">"</span><span class="s">Content-Type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">application/json</span><span class="sh">"</span>
+	<span class="p">}</span>
+  <span class="n">url</span> <span class="o">=</span> <span class="sh">"</span><span class="s">https://api.my-great-app.com/v1.0/users/</span><span class="sh">"</span> <span class="o">+</span> <span class="nb">id</span><span class="sh">"</span><span class="s">
+  response = requests.get(url, headers=headers)
+	return response
+</span></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">access_token.token</code> is now a computed property. If you request it, the <code class="language-plaintext highlighter-rouge">token()</code> function will determine if the token is expired or not. If it’s still valid, it will return the token. If not, it will first acquire a new token, then return the new token.</p>
+
+<p>We only need a getter for this property, since nothing outside of the class needs to be able to set the token.</p>
+
+<p>And now, your token will magically manage itself, leaving you free to write good code against your favorite API.</p>]]></content><author><name>Colin Weir</name></author><summary type="html"><![CDATA[This class is one of my favorite simple patterns to implement when writing Python code against a web API. It’s a class which maintains the lifecycle of an OAuth bearer token for you, so that each time you use the token elsewhere in your code, you get a valid token back.]]></summary></entry><entry><title type="html">Philadelphia’s Tiny Targets, Ranked</title><link href="http://0.0.0.0:4000/blog/philadelphia-s-tiny-targets-ranked/" rel="alternate" type="text/html" title="Philadelphia’s Tiny Targets, Ranked" /><published>2022-03-31T19:00:00-05:00</published><updated>2022-03-31T19:00:00-05:00</updated><id>http://0.0.0.0:4000/blog/philadelphia-s-tiny-targets-ranked</id><content type="html" xml:base="http://0.0.0.0:4000/blog/philadelphia-s-tiny-targets-ranked/"><![CDATA[<h2 id="washington-square-">Washington Square (🪦)</h2>
+
+<p>The worst one. Incredibly tiny, and for some reason floor space is given up to have a CVS and a Starbucks inside, when there’s standalone ones within a block.</p>
+
+<h2 id="broad-and-washington">Broad and Washington</h2>
+
+<p>Decent size, but has trouble keeping things in stock.</p>
+
+<h2 id="rittenhouse">Rittenhouse</h2>
+
+<p>Good location, and a good focus on essentials. Large food selection, good pharmacy department, and a surprisingly decent home goods section.</p>
+
+<h2 id="art-museum">Art Museum</h2>
+
+<p>Great size, good selection, but you may die trying to get through the intersection of 20th and Callowhill.</p>
+
+<h2 id="northern-liberties">Northern Liberties</h2>
+
+<p>Basically a full-size Target. Wide selection. The best one.</p>]]></content><author><name>Colin Weir</name></author><summary type="html"><![CDATA[Washington Square (🪦)]]></summary></entry><entry><title type="html">Good Product Code Names</title><link href="http://0.0.0.0:4000/blog/good-product-code-names/" rel="alternate" type="text/html" title="Good Product Code Names" /><published>2022-02-15T18:00:00-06:00</published><updated>2022-02-15T18:00:00-06:00</updated><id>http://0.0.0.0:4000/blog/good-product-code-names</id><content type="html" xml:base="http://0.0.0.0:4000/blog/good-product-code-names/"><![CDATA[<ul>
+  <li><a href="https://www.anandtech.com/show/16192/the-iphone-12-review/2">Icestorm and Firestorm</a>, the iPhone 12 SOC cores</li>
+  <li><a href="https://chromium.googlesource.com/chromiumos/platform/depthcharge">Depthcharge</a>, the ChromeOS bootloader</li>
+</ul>]]></content><author><name>Colin Weir</name></author><summary type="html"><![CDATA[Icestorm and Firestorm, the iPhone 12 SOC cores Depthcharge, the ChromeOS bootloader]]></summary></entry><entry><title type="html">Low Maintenance</title><link href="http://0.0.0.0:4000/blog/low-maintenance/" rel="alternate" type="text/html" title="Low Maintenance" /><published>2022-01-19T18:00:00-06:00</published><updated>2022-01-19T18:00:00-06:00</updated><id>http://0.0.0.0:4000/blog/low-maintenance</id><content type="html" xml:base="http://0.0.0.0:4000/blog/low-maintenance/"><![CDATA[<p>Devices and software in my house that require almost no care and feeding:</p>
+
+<ul>
+  <li><a href="https://www.casetawireless.com">Lutron Caseta</a> light switches</li>
+  <li><a href="https://eero.com">Eero</a> wireless access points</li>
+  <li><a href="https://winegard.com/industry/at-home/hdtv-digital-antennas/classic-series-yagi/classic-series-yagi-ya-7000c">My new TV antenna</a></li>
+  <li>My long-term email provider, <a href="https://ref.fm/u11942549">Fastmail</a></li>
+</ul>
+
+<p>Devices in my house that require an excessive amount of care and feeding:</p>
+
+<ul>
+  <li>My <a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi</a> running <a href="https://www.home-assistant.io">9</a> different <a href="https://homebridge.io">kinds</a> of automation software
+    <ul>
+      <li>Especially homebridge plugins</li>
+    </ul>
+  </li>
+  <li>The fountain in the back yard that grows mildew all summer no matter how much algae treatment I put in it</li>
+</ul>]]></content><author><name>Colin Weir</name></author><summary type="html"><![CDATA[Devices and software in my house that require almost no care and feeding:]]></summary></entry><entry><title type="html">Trees Are Terrific</title><link href="http://0.0.0.0:4000/blog/trees-are-terrific/" rel="alternate" type="text/html" title="Trees Are Terrific" /><published>2021-01-25T18:00:00-06:00</published><updated>2021-01-25T18:00:00-06:00</updated><id>http://0.0.0.0:4000/blog/trees-are-terrific</id><content type="html" xml:base="http://0.0.0.0:4000/blog/trees-are-terrific/"><![CDATA[<p>One of my favorite times of year happens in mid-December. After the third or fourth frost-and-thaw of the year, the bright red berries on my <a href="https://bumblebeeblog.com/2008/05/07/not-just-a-king-in-winter-the-winter-king-hawthorn/">Winter King Hawthorn</a> tree become just fermented enough to attract the attention of the robins that live in the area. In the span of an afternoon, a whole flock will descend on the tree and pick it clean, getting slightly drunk in the process.</p>
+
+<p>After we purchased our house in 2013, we applied for a free tree almost immediately. The city of Philadelphia offers two avenues to get a free tree in front of your house. The first is through <a href="https://www.phila.gov/services/trees-parks-the-environment/tree-related-services/get-a-street-tree/">Parks &amp; Rec</a>. Fill out the online form, and within a few months someone will come out, cut your sidewalk, and drop a beautiful new tree into the pit. The other method is through the <a href="https://phsonline.org/programs/tree-programs/get-a-tree">PHS Tree Tenders</a> program, where the process is fairly similar.</p>
+
+<p>Once your tree is installed, you can attach a <a href="https://www.treegator.com">Tree Gator</a> and keep it watered until it’s healthy and strong, and then enjoy it for years to come.</p>
+
+<p><img src="/assets/img/blog/trees-are-terrific/IMG_3339.jpeg" alt="Fresh-installed, June 2014" /></p>
+
+<p>Fresh-installed, June 2014</p>
+
+<p>The benefits of trees in the urban landscape can’t be understated. They add necessary shade to a vast concrete expanse, helping to reduce summer cooling costs (and less AC usage means less electricity used). They provide refuge for woodland creatures. They provide fresh oxygen and help to filter storm water.</p>
+
+<p>And you can watch birds get drunk.</p>
+
+<p><img src="Trees%20Are%20Terrific/IMG_0767_(1).jpeg" alt="Little lushes." /></p>
+
+<p>Little lushes.</p>
+
+<aside>
+🗺️
+
+[Check out a map](https://www.opentreemap.org/phillytreemap/map/) of street trees throughout Philadelphia.
+
+</aside>]]></content><author><name>Colin Weir</name></author><summary type="html"><![CDATA[One of my favorite times of year happens in mid-December. After the third or fourth frost-and-thaw of the year, the bright red berries on my Winter King Hawthorn tree become just fermented enough to attract the attention of the robins that live in the area. In the span of an afternoon, a whole flock will descend on the tree and pick it clean, getting slightly drunk in the process.]]></summary></entry></feed>

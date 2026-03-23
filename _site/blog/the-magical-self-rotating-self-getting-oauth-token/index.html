@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Magical Self-Rotating, Self-Getting OAuth Token | Colin Weir’s Apps</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="The Magical Self-Rotating, Self-Getting OAuth Token" />
+<meta name="author" content="Colin Weir" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This class is one of my favorite simple patterns to implement when writing Python code against a web API. It’s a class which maintains the lifecycle of an OAuth bearer token for you, so that each time you use the token elsewhere in your code, you get a valid token back." />
+<meta property="og:description" content="This class is one of my favorite simple patterns to implement when writing Python code against a web API. It’s a class which maintains the lifecycle of an OAuth bearer token for you, so that each time you use the token elsewhere in your code, you get a valid token back." />
+<link rel="canonical" href="http://0.0.0.0:4000/blog/the-magical-self-rotating-self-getting-oauth-token/" />
+<meta property="og:url" content="http://0.0.0.0:4000/blog/the-magical-self-rotating-self-getting-oauth-token/" />
+<meta property="og:site_name" content="Colin Weir’s Apps" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-04-17T19:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Magical Self-Rotating, Self-Getting OAuth Token" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Colin Weir"},"dateModified":"2022-04-17T19:00:00-05:00","datePublished":"2022-04-17T19:00:00-05:00","description":"This class is one of my favorite simple patterns to implement when writing Python code against a web API. It’s a class which maintains the lifecycle of an OAuth bearer token for you, so that each time you use the token elsewhere in your code, you get a valid token back.","headline":"The Magical Self-Rotating, Self-Getting OAuth Token","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/blog/the-magical-self-rotating-self-getting-oauth-token/"},"url":"http://0.0.0.0:4000/blog/the-magical-self-rotating-self-getting-oauth-token/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Colin Weir&apos;s Apps" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/" style="text-decoration: none; color: inherit;">
+                <h1>COL<span class="dot">i</span>N We<span class="dot">i</span>R</h1>
+            </a>
+            <p>presents</p>
+        </div>
+
+        <nav class="main-nav">
+            <a href="/">Apps</a>
+            <a href="/blog">Blog</a>
+            <a href="https://bsky.app/profile/colin.hoagie.fun">Bluesky</a>
+            <a href="mailto:colinsweir@gmail.com">Contact</a>
+        </nav>
+        
+        <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">The Magical Self-Rotating, Self-Getting OAuth Token</h1>
+    <p class="post-meta">
+      <time datetime="2022-04-17T19:00:00-05:00">
+        April 17, 2022
+      </time>
+    </p>
+  </header>
+
+  <div class="post-content">
+    <p>This class is one of my favorite simple patterns to implement when writing Python code against a web API. It’s a class which maintains the lifecycle of an OAuth bearer token for you, so that each time you use the token elsewhere in your code, you get a valid token back.</p>
+
+<p>The class makes the following assumptions:</p>
+
+<ul>
+  <li>We have client credentials for our OAuth app (no interactive login is required to get a fresh token).</li>
+  <li>The token expires after some number of seconds.</li>
+  <li>We can get a fresh token on each run with our client credentials, without having to persist a refresh token in memory, on disk or in a Vault. This code can be adapted to use a refresh token fairly easily.</li>
+</ul>
+
+<p>The class was originally built against the Azure graph API using the <code class="language-plaintext highlighter-rouge">msal</code> library, but you can adapt it to use the SDK of any app. For our example, I’ve used a generic app with the <code class="language-plaintext highlighter-rouge">requests</code> library.</p>
+
+<p>Here’s the entire class:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">requests</span>
+<span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="k">class</span> <span class="nc">MagicToken</span><span class="p">:</span>
+	<span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+		<span class="sh">"</span><span class="s">client_id</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">123456</span><span class="sh">"</span><span class="p">,</span>
+		<span class="sh">"</span><span class="s">client_secret</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">shh</span><span class="sh">"</span><span class="p">,</span>
+		<span class="sh">"</span><span class="s">scope</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span> <span class="sh">"</span><span class="s">read</span><span class="sh">"</span><span class="p">,</span>  <span class="sh">"</span><span class="s">write</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">etc</span><span class="sh">"</span> <span class="p">],</span>
+		<span class="sh">"</span><span class="s">auth_endpoint</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">https://api.my-great-app.com/v1.0/auth</span><span class="sh">"</span>
+	<span class="p">}</span>
+	
+	<span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+		<span class="n">self</span><span class="p">.</span><span class="nf">__acquire_token</span><span class="p">()</span>
+	
+	<span class="k">def</span> <span class="nf">__acquire_token</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+		<span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+			<span class="sh">"</span><span class="s">client_id</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">client_id</span><span class="sh">'</span><span class="p">],</span>
+			<span class="sh">"</span><span class="s">client_secret</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">client_secret</span><span class="sh">'</span><span class="p">],</span>
+	    <span class="sh">"</span><span class="s">scope</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">scope</span><span class="sh">'</span><span class="p">]</span>
+		<span class="p">}</span>
+	  <span class="n">url</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">auth_endpoint</span><span class="sh">'</span><span class="p">]</span>
+	  <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+		<span class="n">self</span><span class="p">.</span><span class="n">__access_token</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="sh">'</span><span class="s">access_token</span><span class="sh">'</span><span class="p">]</span>
+		<span class="n">self</span><span class="p">.</span><span class="n">__token_expires</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">timezone</span><span class="p">.</span><span class="n">utc</span><span class="p">)</span> <span class="o">+</span> <span class="n">datetime</span><span class="p">.</span><span class="nf">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">result</span><span class="p">[</span><span class="sh">'</span><span class="s">expiration</span><span class="sh">'</span><span class="p">])</span>
+		<span class="k">return</span>
+	
+	<span class="nd">@property</span>
+	<span class="k">def</span> <span class="nf">token</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+		<span class="k">if</span> <span class="n">self</span><span class="p">.</span><span class="n">__token_expires</span> <span class="o">&gt;</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">timezone</span><span class="p">.</span><span class="n">utc</span><span class="p">):</span>
+			<span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">__access_token</span>
+		<span class="k">else</span><span class="p">:</span>
+			<span class="n">self</span><span class="p">.</span><span class="nf">__acquire_token</span><span class="p">()</span>
+			<span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">__access_token</span>
+</code></pre></div></div>
+
+<p>Let’s break it down piece by piece.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="sh">"</span><span class="s">client_id</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">123456</span><span class="sh">"</span><span class="p">,</span>
+	<span class="sh">"</span><span class="s">client_secret</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">shh</span><span class="sh">"</span><span class="p">,</span>
+	<span class="sh">"</span><span class="s">scope</span><span class="sh">"</span><span class="p">:</span> <span class="p">[</span> <span class="sh">"</span><span class="s">read</span><span class="sh">"</span><span class="p">,</span>  <span class="sh">"</span><span class="s">write</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">etc</span><span class="sh">"</span> <span class="p">],</span>
+	<span class="sh">"</span><span class="s">auth_endpoint</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">https://api.my-great-app.com/v1.0/auth</span><span class="sh">"</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This is the basic configuration required to get our token. Client ID, client secret, and the authorization endpoint.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+	<span class="n">self</span><span class="p">.</span><span class="nf">__acquire_token</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">__acquire_token</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+	<span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+		<span class="sh">"</span><span class="s">client_id</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">client_id</span><span class="sh">'</span><span class="p">],</span>
+		<span class="sh">"</span><span class="s">client_secret</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">client_secret</span><span class="sh">'</span><span class="p">],</span>
+    <span class="sh">"</span><span class="s">scope</span><span class="sh">"</span> <span class="p">:</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">scope</span><span class="sh">'</span><span class="p">]</span>
+	<span class="p">}</span>
+  <span class="n">url</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">auth_endpoint</span><span class="sh">'</span><span class="p">]</span>
+  <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+	<span class="n">self</span><span class="p">.</span><span class="n">__access_token</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="sh">'</span><span class="s">access_token</span><span class="sh">'</span><span class="p">]</span>
+	<span class="n">self</span><span class="p">.</span><span class="n">__token_expires</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">timezone</span><span class="p">.</span><span class="n">utc</span><span class="p">)</span> <span class="o">+</span> <span class="n">datetime</span><span class="p">.</span><span class="nf">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="n">result</span><span class="p">[</span><span class="sh">'</span><span class="s">expiration</span><span class="sh">'</span><span class="p">])</span>
+	<span class="k">return</span>
+</code></pre></div></div>
+
+<p>When we first start our app, we need to acquire a token. The <code class="language-plaintext highlighter-rouge">__acquire_token()</code> method starts with <code class="language-plaintext highlighter-rouge">__</code> in order to indicate that it shouldn’t be called from elsewhere in our code, it’s effectively a “private” that should only be called from within our class.</p>
+
+<p>When we receive our OAuth response from the server, we want to capture the token itself, as well as the expiration time. Most servers give you back a number of seconds until expiration. If there’s a refresh token as well, you might need to use that to get your next token. We convert this number of seconds into a <code class="language-plaintext highlighter-rouge">datetime</code> object, in the future from the current time.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@property</span>
+<span class="k">def</span> <span class="nf">token</span><span class="p">(</span><span class="n">self</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">self</span><span class="p">.</span><span class="n">__token_expires</span> <span class="o">&gt;</span> <span class="n">datetime</span><span class="p">.</span><span class="n">datetime</span><span class="p">.</span><span class="nf">now</span><span class="p">(</span><span class="n">datetime</span><span class="p">.</span><span class="n">timezone</span><span class="p">.</span><span class="n">utc</span><span class="p">):</span>
+		<span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">__access_token</span>
+	<span class="k">else</span><span class="p">:</span>
+		<span class="n">self</span><span class="p">.</span><span class="nf">__acquire_token</span><span class="p">()</span>
+		<span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="n">__access_token</span>
+</code></pre></div></div>
+
+<p>This is where the magic comes in. We can use Python’s <a href="https://www.programiz.com/python-programming/property">@property decorator</a> to handle the lifecycle of the token. Whenever your other code needs to use this token, you can do it like this:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">access_token</span> <span class="o">=</span> <span class="nc">MagicToken</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">get_user</span><span class="p">(</span><span class="nb">id</span><span class="p">):</span>
+  <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+		<span class="sh">"</span><span class="s">Authorization</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">Bearer </span><span class="sh">"</span> <span class="o">+</span> <span class="n">access_token</span><span class="p">.</span><span class="n">token</span><span class="p">,</span>
+		<span class="sh">"</span><span class="s">Content-Type</span><span class="sh">"</span><span class="p">:</span> <span class="sh">"</span><span class="s">application/json</span><span class="sh">"</span>
+	<span class="p">}</span>
+  <span class="n">url</span> <span class="o">=</span> <span class="sh">"</span><span class="s">https://api.my-great-app.com/v1.0/users/</span><span class="sh">"</span> <span class="o">+</span> <span class="nb">id</span><span class="sh">"</span><span class="s">
+  response = requests.get(url, headers=headers)
+	return response
+</span></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">access_token.token</code> is now a computed property. If you request it, the <code class="language-plaintext highlighter-rouge">token()</code> function will determine if the token is expired or not. If it’s still valid, it will return the token. If not, it will first acquire a new token, then return the new token.</p>
+
+<p>We only need a getter for this property, since nothing outside of the class needs to be able to set the token.</p>
+
+<p>And now, your token will magically manage itself, leaving you free to write good code against your favorite API.</p>
+
+  </div>
+</article>
+
+
+        <div class="footer">
+            <p>&copy; 2026 Colin Weir</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+title: Colin Weir's Apps
+description: Colin Weir makes apps. Away Message is digital sticky notes for your real friends. Wheelie is bike ride tracking.
+author: Colin Weir
+baseurl: ""
+url: "https://colinsent.me"
+image: /img/og-image.png
+
+markdown: kramdown
+# theme: minima # We are using custom layouts in _layouts/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+permalink: /blog/:title/

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/css/style.css" | relative_url }}">
+    {% feed_meta %}
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="{{ "/" | relative_url }}" style="text-decoration: none; color: inherit;">
+                <h1>COL<span class="dot">i</span>N We<span class="dot">i</span>R</h1>
+            </a>
+            <p>presents</p>
+        </div>
+
+        <nav class="main-nav">
+            <a href="{{ "/" | relative_url }}">Apps</a>
+            <a href="{{ "/blog" | relative_url }}">Blog</a>
+            <a href="https://bsky.app/profile/colin.hoagie.fun">Bluesky</a>
+            <a href="mailto:colinsweir@gmail.com">Contact</a>
+        </nav>
+        
+        {{ content }}
+
+        <div class="footer">
+            <p>&copy; {{ "now" | date: "%Y" }} Colin Weir</p>
+        </div>
+    </div>
+</body>
+</html>

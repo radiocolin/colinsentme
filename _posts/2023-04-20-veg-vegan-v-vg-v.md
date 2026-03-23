@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Veg, Vegan, V, VG, V+"
+date: 2023-04-20 00:00:00 
+---
+
+My wife is vegan, and so when I sit down at any restaurant, whether she's with me or not, the first thing I usually do is scan the menu to see what vegan options are available.
+
+This is where the trouble starts. **Every restaurant has their own system for indicating vegetarian versus vegan, and it’s never consistent between restaurants**. Some use V for vegetarian and VG for vegan. Others reverse it. My personal preference, because I think it’s the least ambiguous, is V for vegetarian and V+ for vegan, and I wish all restaurants would standardize on this.
+
+My heart soars when I see that “vegan” indicator at the bottom of the menu, and then I start scanning. And often my heart immediately sinks when I realize there is exactly one vegan item available: a hummus plate. **Unless you’re Zahav, [no one wants your mediocre hummus plate](https://www.morganspier.com/menu)**. It’s not a meal, it’s barely an appetizer. If the humus plate is the only vegan option on your menu, please don’t even bother with the indicator. It just gives us false hope that there might be something good.
+
+One of the better developments for vegan dining out in years is the prevalence of Beyond and Impossible burgers. They’re generally a nice improvement over mushy house-made veggie burgers, but most restaurants don’t put in 1/4 of the effort that they put into all their other burgers. **Martin’s Potato Rolls are not vegan. A vegan burger with no cheese and no sauce is not actually a good burger, it’s just faux beef on white bread.** If you’re going to put forth the effort to put an Impossible burger on the menu, then please make it a good one, and also buy some Violife cheddar and Veganaise. Don’t make it an afterthought, and do more than just a vegetarian patty with dairy cheese and egg-based mayo.
+
+There are countless restaurants that do this really well. Places like [Tattooed Mom](https://www.tattooedmomphilly.com) and [Front Street Cafe](https://frontstreetcafe.net) have a **vegan-by-default policy**, where things like mayo and hollandaise sauce only come in vegan varieties, and truly, no one knows the difference. [Burger Time in Audubon](https://burgertimenj.com) offers vegan versions of almost all of their burgers. [Loco Pez](http://locopez.com) has multiple vegan options like soy chorizo that you can mix-and-match with all the normal taco and burrito ingredients, and even has vegan sour creams and cremas. [Golden Empress Garden](https://www.goldenempressgarden.com) offers tofu and seitan versions of most of their menu items. When we were in the UK last year, [Byron](https://www.byron.co.uk) was an absolute favorite.
+
+A thing from the UK that I really wish would catch on in America is the “[allergen book](https://www.food.gov.uk/business-guidance/allergen-guidance-for-food-businesses)”. At any restaurant, you can ask for a book that contains a full list of allergens in every single dish. Conveniently, almost anything that isn’t straight up beef or chicken but is from an animal is also considered an allergen (that might be worth exploring on its own sometime, huh?). Milk, eggs, honey, shellfish, all things that might be lurking in otherwise innocuous restaurant items. Speaking of hummus, did you know that in Italy a lot of the hummus has milk or cheese in it?
+
+This is not to say that I demand a comprehensive vegan menu from every restaurant. I don’t think Butcher and Singer needs to have a cauliflower chop cooked in vegan butter. Some places are meat-focused, and that’s fine. (Although, to be honest, you can probably do a lot more interesting things with a plate of vegetables than with steak and chicken, but that’s a different blog post. See also the link above to Burger Time.)
+
+**I promise that you can put honest-to-goodness effort into your vegan menu.** You can make a lot of delicious, interesting dishes with vegetables. You can fill out your bar menu with a vegan burger that at least feels like you put some amount of effort to it, and throw in a buffalo cauliflower that doesn’t use dairy butter. And we will come back and spend our money again and again.
