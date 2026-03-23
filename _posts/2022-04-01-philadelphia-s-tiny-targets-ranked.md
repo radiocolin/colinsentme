@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Philadelphia’s Tiny Targets, Ranked"
+emoji: "🎯"
 date: 2022-04-01 00:00:00 
 ---
 

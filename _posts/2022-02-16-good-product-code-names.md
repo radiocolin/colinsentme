@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Good Product Code Names"
+emoji: "🤐"
 date: 2022-02-16 00:00:00 
 ---
 

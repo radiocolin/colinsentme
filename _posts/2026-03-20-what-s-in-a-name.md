@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What’s in a name?"
+emoji: "⚾"
 date: 2026-03-20 00:00:00 
 ---
 

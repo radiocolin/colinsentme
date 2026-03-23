@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Veg, Vegan, V, VG, V+"
+emoji: "🍄"
 date: 2023-04-20 00:00:00 
 ---
 

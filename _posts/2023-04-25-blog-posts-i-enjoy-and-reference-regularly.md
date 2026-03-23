@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Blog Posts I Enjoy and Reference Regularly"
+emoji: "🖊️"
 date: 2023-04-25 00:00:00 
 ---
 

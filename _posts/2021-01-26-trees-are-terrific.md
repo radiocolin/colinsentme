@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Trees Are Terrific"
+emoji: "🌳"
 date: 2021-01-26 00:00:00 
 ---
 

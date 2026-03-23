@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Magical Self-Rotating, Self-Getting OAuth Token"
+emoji: "♻️"
 date: 2022-04-18 00:00:00 
 ---
 

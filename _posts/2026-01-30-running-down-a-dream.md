@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Running Down a Dream"
+emoji: "🏃"
 date: 2026-01-30 00:00:00 
 ---
 
