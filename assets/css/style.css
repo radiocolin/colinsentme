@@ -457,32 +457,29 @@ body {
 }
 
 .post-content aside {
-    background: #fdfdfd;
-    padding: 20px 25px;
-    border-radius: 12px;
-    border-left: 5px solid #2AE4CA;
-    border-top: 1px solid #eee;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    background: #f1f1f1; /* Light gray from Notion */
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: none;
     margin: 30px 0;
     font-size: 0.95em;
-    color: #555;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03);
+    color: #37352f; /* Darker Notion text color */
 }
 
 .callout-content {
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 12px;
 }
 
 .callout-emoji {
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1.2;
 }
 
 .callout-text {
     flex: 1;
+    line-height: 1.5;
 }
 
 .callout-text p {
