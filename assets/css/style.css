@@ -460,7 +460,7 @@ body {
     background: #fdfdfd;
     padding: 20px 25px;
     border-radius: 12px;
-    border-left: 5px solid #2AE4CA; /* Matching your teal accent */
+    border-left: 5px solid #2AE4CA;
     border-top: 1px solid #eee;
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
@@ -468,6 +468,25 @@ body {
     font-size: 0.95em;
     color: #555;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.callout-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.callout-emoji {
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+
+.callout-text {
+    flex: 1;
+}
+
+.callout-text p {
+    margin: 0;
 }
 
 .post-content aside p:last-child {
