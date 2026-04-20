@@ -275,10 +275,13 @@ body {
 
 .pixels-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    /* Calculate width: 256px img + 20px padding = 276px per app */
+    grid-template-columns: repeat(auto-fit, 276px);
     justify-content: center;
     gap: 20px;
-    max-width: fit-content;
+    width: 100%;
+    /* Max 4 across: (276 * 4) + (20 * 3) = 1104 + 60 = 1164px */
+    max-width: 1164px;
     margin: 0 auto;
 }
 
@@ -290,7 +293,7 @@ body {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
     line-height: 0;
-    width: fit-content;
+    width: 256px;
 }
 
 .pixel-app:hover {
@@ -355,12 +358,16 @@ body {
     }
 
     .pixels-container {
-        grid-template-columns: repeat(2, 1fr);
+        /* 128px img + 10px padding = 138px per app */
+        grid-template-columns: repeat(auto-fit, 138px);
         gap: 10px;
+        /* Max 2 across: (138 * 2) + 10 = 286px */
+        max-width: 286px;
     }
 
     .pixel-app {
         padding: 5px;
+        width: 128px;
     }
 
     .utility {
