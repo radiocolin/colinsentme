@@ -274,11 +274,12 @@ body {
 }
 
 .pixels-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 20px;
+    max-width: fit-content;
+    margin: 0 auto;
 }
 
 .pixel-app {
@@ -289,6 +290,7 @@ body {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease-in-out;
     line-height: 0;
+    width: fit-content;
 }
 
 .pixel-app:hover {
@@ -350,6 +352,15 @@ body {
     .pixel-app img {
         width: 128px;
         height: 64px;
+    }
+
+    .pixels-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .pixel-app {
+        padding: 5px;
     }
 
     .utility {
